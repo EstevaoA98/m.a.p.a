@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos | Estevão Miranda</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Conheça os projetos front-end desenvolvidos por Estevão Miranda, com links de código e demonstração.">
+  <meta name="author" content="Estevão Miranda">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seusite.com.br/projetos.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projetos | Estevão Miranda">
+  <meta property="og:description" content="Conheça os projetos front-end desenvolvidos por Estevão Miranda.">
+  <meta property="og:url" content="https://seusite.com.br/projetos.html">
+  <meta property="og:locale" content="pt_BR">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--  NAVBAR  -->
+  <nav class="navbar navbar-expand-lg navbar-editor">
+    <div class="container flex-column align-items-start">
+      <span class="barra-titulo">Portfolio</span>
+      <div class="d-flex w-100 justify-content-between align-items-center">
+        <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Estevão Miranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="secao-hero pb-4">
+    <div class="container">
+      <h1 class="hero-titulo titulo-pagina-secundaria">Projetos</h1>
+      <p class="texto-introducao-secao">
+        Uma seleção de projetos desenvolvidos com foco em desenvolvimento backend, aplicando boas práticas, arquitetura de software e tecnologias como PHP, Laravel, Symfony e MySQL.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-4">
+    <div class="container">
+
+      <h2 class="visually-hidden">Lista de projetos</h2>
+
+      <!-- Filtros -->
+      <div class="mb-4">
+        <button class="filtro-tecnologia ativo" data-tecnologia="todos">Todos</button>
+        <button class="filtro-tecnologia" data-tecnologia="html">HTML/CSS</button>
+        <button class="filtro-tecnologia" data-tecnologia="js">JavaScript</button>
+        <button class="filtro-tecnologia" data-tecnologia="react">React</button>
+      </div>
+
+       <div class="row g-4">
+        <!-- EventoDev -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php,laravel,blade">
+          <div class="cartao revelar">
+            <h3 class="h5">EventoDev</h3>
+            <p class="text-muted">
+              Sistema web desenvolvido em Laravel para gerenciamento de eventos,
+              com interface organizada utilizando Blade e foco em boas práticas de
+              desenvolvimento backend.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+              <span class="badge-tecnologia">Laravel</span>
+              <span class="badge-tecnologia">Blade</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/EventDev" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- Química Fácil -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php,laravel">
+          <div class="cartao revelar">
+            <h3 class="h5">Química Fácil</h3>
+            <p class="text-muted">
+              Plataforma desenvolvida para tornar o aprendizado de Química mais
+              acessível, apresentando conceitos de forma didática utilizando PHP e
+              Laravel.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+              <span class="badge-tecnologia">Laravel</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/QuimicaFacil-PHP-Laravel" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Sneakers -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php">
+          <div class="cartao revelar">
+            <h3 class="h5">Blog Sneakers</h3>
+            <p class="text-muted">
+              Blog desenvolvido em PHP para publicação de conteúdos sobre sneakers,
+              organizado com foco em simplicidade e navegação intuitiva.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/BlogSneakers" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- Projeto Pizzaria -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php,mysql">
+          <div class="cartao revelar">
+            <h3 class="h5">Sistema de Pizzaria</h3>
+            <p class="text-muted">
+              Aplicação web para gerenciamento de pedidos de uma pizzaria,
+              permitindo a personalização e acompanhamento dos pedidos dos clientes.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+              <span class="badge-tecnologia">MySQL</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/PROJETO-Pizzaria" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- FormFlow -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php,laravel,blade">
+          <div class="cartao revelar">
+            <h3 class="h5">FormFlow</h3>
+            <p class="text-muted">
+              Sistema desenvolvido em Laravel para digitalizar o processo de
+              inspeção de motores, substituindo formulários em papel por um fluxo
+              totalmente online.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+              <span class="badge-tecnologia">Laravel</span>
+              <span class="badge-tecnologia">Blade</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/FormFlow" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+        <!-- Learning Symfony -->
+        <div class="col-md-6 col-lg-4 item-projeto" data-tecnologias="php,symfony,twig">
+          <div class="cartao revelar">
+            <h3 class="h5">Learning Symfony</h3>
+            <p class="text-muted">
+              Projeto de estudos desenvolvido em Symfony para aprofundar os
+              conhecimentos no framework, utilizando Twig e a arquitetura MVC.
+            </p>
+            <div class="mb-3">
+              <span class="badge-tecnologia">PHP</span>
+              <span class="badge-tecnologia">Symfony</span>
+              <span class="badge-tecnologia">Twig</span>
+            </div>
+            <a href="https://github.com/EstevaoA98/LearningSymfony" target="_blank" class="btn-contorno btn-sm">
+              Ver código
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <span>&copy; <span id="anoAtual"></span> Estevão Miranda — Todos os direitos reservados.</span>
+      <div>
+        <a href="https://github.com/EstevaoA98" target="_blank" class="me-3">GitHub</a>
+        <a href="https://www.linkedin.com/in/estevaomiranda/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="botaoTopo" title="Voltar ao topo">&uarr;</button>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>$("#anoAtual").text(new Date().getFullYear());</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Estevão Miranda</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Entre em contato com Estevão Miranda, desenvolvedor(a) front-end júnior, por e-mail, LinkedIn ou GitHub.">
+  <meta name="author" content="Estevão Miranda">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://seusite.com.br/contato.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contato | Estevão Miranda">
+  <meta property="og:description" content="Entre em contato com Estevão Miranda, desenvolvedor(a) front-end júnior.">
+  <meta property="og:url" content="https://seusite.com.br/contato.html">
+  <meta property="og:locale" content="pt_BR">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!--  NAVBAR  --> 
+  <nav class="navbar navbar-expand-lg navbar-editor">
+    <div class="container flex-column align-items-start">
+      <span class="barra-titulo">Portfolio</span>
+      <div class="d-flex w-100 justify-content-between align-items-center">
+        <button class="navbar-toggler ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Estevão Miranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="projetos.html">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="secao-hero pb-4">
+    <div class="container">
+      <h1 class="hero-titulo titulo-pagina-secundaria">Contato</h1>
+      <p class="texto-introducao-secao">
+        Preencha o formulário abaixo ou me chame diretamente pelos links de
+        contato. Este formulário é apenas visual; para receber os e-mails de
+        verdade, conecte-o a um serviço como Formspree ou EmailJS.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-4">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-7 revelar">
+          <h2 class="visually-hidden">Formulário de contato</h2>
+          <form id="formularioContato" novalidate>
+            <div class="mb-3">
+              <label for="campoNome" class="form-label fonte-mono">Nome</label>
+              <input type="text" class="form-control" id="campoNome" placeholder="Seu nome completo">
+            </div>
+            <div class="mb-3">
+              <label for="campoEmail" class="form-label fonte-mono">E-mail</label>
+              <input type="email" class="form-control" id="campoEmail" placeholder="seuemail@exemplo.com">
+            </div>
+            <div class="mb-3">
+              <label for="campoMensagem" class="form-label fonte-mono">Mensagem</label>
+              <textarea class="form-control" id="campoMensagem" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button type="submit" class="btn-acento" id="botaoEnviarMensagem">Enviar mensagem</button>
+            <div id="statusFormulario" class="mensagem-status"></div>
+          </form>
+        </div>
+
+        <div class="col-lg-5 revelar">
+          <h2 class="h4 mb-3">Outras formas de contato</h2>
+          <ul class="list-unstyled fonte-mono">
+            <li class="mb-2">📧 <a href="mailto:estevao.a98@gmail.com">estevao.a98@gmail.com</a></li>
+            <li class="mb-2">💼 <a href="https://www.linkedin.com/in/estevaomiranda/" target="_blank">linkedin.com/in/estevaomiranda</a></li>
+            <li class="mb-2">🐙 <a href="https://github.com/EstevaoA98" target="_blank">github.com/EstevaoA98</a></li>
+            <li class="mb-2">📍 Belo Horizonte, MG</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+      <span>&copy; <span id="anoAtual"></span> Estevão Miranda — Todos os direitos reservados.</span>
+      <div>
+        <a href="https://github.com/EstevaoA98" target="_blank" class="me-3">GitHub</a>
+        <a href="https://www.linkedin.com/in/estevaomiranda/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="botaoTopo" title="Voltar ao topo">&uarr;</button>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- SDK do EmailJS: envia e-mail de verdade direto pelo front-end, -->
+  <!-- sem precisar de servidor próprio. Configuração no topo do js/script.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>$("#anoAtual").text(new Date().getFullYear());</script>
+</body>
+</html>
