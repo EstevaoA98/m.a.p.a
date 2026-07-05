@@ -200,28 +200,4 @@ cair ou for bloqueado, meu site continua funcionando normalmente.
 - Boas práticas de organização de código (separação de responsabilidades,
   nomes de variáveis claros, comentários explicando cada trecho).
 
-## 11. O que falta eu preencher com as minhas informações
 
-- Meu nome, foto, e-mail e redes sociais (estão marcados como "Seu Nome" /
-  "seuemail@exemplo.com" em todas as páginas).
-- Meus projetos reais na página `projetos.html`, com links de GitHub/demo.
-- Meu nível real em cada tecnologia, na página `habilidades.html`
-  (atributo `data-nivel`).
-- As três chaves do EmailJS, no topo do `js/script.js`.
-- A URL final do site (depois do deploy), nos arquivos `robots.txt`,
-  `sitemap.xml` e nas tags `canonical`/`og:url` de cada página.
-
-## 12. Como entreguei e testei o projeto
-
-Como o site é 100% estático (HTML, CSS e JavaScript puro, sem nenhum passo
-de build), não preciso de nenhuma configuração especial de hospedagem — ele
-funciona em qualquer serviço de hospedagem de arquivos estáticos, ou até
-localmente.
-
-Para testar antes de entregar, abri o `index.html` direto no navegador e
-naveguei pelas 4 páginas pelo menu. Também simulei diferentes tamanhos de
-tela pelo modo de dispositivo do navegador (F12 → ícone de celular) para
-conferir a responsividade.
-
-Para entregar, compactei a pasta inteira do projeto (`portfolio-jr`) em um
-arquivo `.zip`, junto com este relatório.
